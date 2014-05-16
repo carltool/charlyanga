@@ -1,0 +1,105 @@
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TabHost 
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout 
+            android:id="@+id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TabWidget 
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                 
+            </TabWidget>
+            <FrameLayout 
+                android:id="@android:id/tabcontent"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tracks" />
+
+                    <ListView 
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/lTracks"></ListView>
+                    
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Titulo"/>
+
+                    <EditText
+                        android:id="@+id/inTitulo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:hint="Titulo de la pista" >
+                        
+                    </EditText>
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Artista"/>
+                    <EditText
+                        android:id="@+id/inArtista"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:hint="Artista" >
+                        
+                    </EditText>
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Album"/>
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/inAlbum"
+                        android:hint="Nombre del album"
+                        ></EditText>
+                     <TextView 
+                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Letra de la cancion"/>
+                     <EditText 
+                         android:layout_width="fill_parent"
+                         android:layout_height="150dp"
+                         android:id="@+id/inLetra"/>
+                    <Button 
+                        android:text="Agregar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/botonAgregar"/>
+                    
+                </LinearLayout>
+                
+             
+               </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
+
